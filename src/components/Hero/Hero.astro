@@ -1,0 +1,16 @@
+---
+import ContentBanner from './ContentBanner.astro'
+const title: string = "Bienvenidos a mi Mundo Digital!"
+const description = "Soy Antonio Mazuelos, desarrollador frontend especializado en VUE.js, HTML y CSS. Acompañame en una colección de mis proyectos más destacados"
+
+---
+
+<section class="bg-hero-pattern">
+  <div class="flex justify-center items-center h-screen">
+      <ContentBanner
+        class="w-full text-center"
+        title={title}
+        description={description}
+      />           
+  </div>
+</section>

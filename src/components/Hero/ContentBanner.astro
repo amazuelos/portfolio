@@ -1,0 +1,19 @@
+---
+import '../../../assets/styles/hero.css';
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+
+---
+<div class="flex flex-col max-w-screen-lg relative p-10">
+  <h1 class="pixelify text-black hover:animate-rainbow mb-4 text-10xl font-extrabold tracking-tight leading-none z-10">
+    <span class="animate-rainbow cursor-pointer">{ title }</span>
+  </h1>
+  <p class="pixelify text-black hover:animate-rainbow mb-6 text-8xl z-10">
+    <span class="animate-rainbow cursor-pointer">{ description }</span>
+  </p>
+  <div class="absolute inset-0 bg-[#FFFF00] bg-opacity-80 rounded-md z-0"></div>
+</div>
