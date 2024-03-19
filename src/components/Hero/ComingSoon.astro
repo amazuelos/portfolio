@@ -1,0 +1,16 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+
+---
+
+<p class="joystix p-10 text-2xl bg-[#49FDFD] bg-opacity-85 border-4 border-gray-500 wave-text rounded-md">
+  {text.split('').map((letter, index) => (
+    <span class="wave-letter text-white rainbow" style={`--i: ${index}`}>
+      {letter}
+    </span>
+  ))}
+</p>

@@ -1,16 +1,28 @@
 ---
 import ContentBanner from './ContentBanner.astro'
-const title: string = "Bienvenidos a mi Mundo Digital!"
-const description = "Soy Antonio Mazuelos, desarrollador frontend especializado en VUE.js, HTML y CSS. Acompañame en una colección de mis proyectos más destacados"
-
+import ComingSoon from './ComingSoon.astro'
+const title: string = "¡Bienvenidos a mi Mundo Digital!"
+const description: string = "Soy Antonio Mazuelos, desarrollador frontend especializado en VUE.js, HTML y CSS. Acompañame en una colección de mis proyectos más destacados"
+const comingSoonText: string = "Próximamente";
 ---
 
 <section class="bg-hero-pattern">
-  <div class="flex justify-center items-center h-screen">
+  <div class="flex flex-col justify-evenly items-center relative h-screen">
       <ContentBanner
         class="w-full text-center"
         title={title}
         description={description}
-      />           
+      />
+      <ComingSoon class="absolute bottom-0" text={comingSoonText} />
+      <!-- Generar múltiples luciérnagas -->
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <div class="firefly"></div>
+      <!-- Agregar más luciérnagas según sea necesario -->
   </div>
 </section>

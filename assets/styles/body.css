@@ -1,3 +1,8 @@
-.pixelify {
-  font-family: 'Pixelify Sans Variable', sans-serif;
+@font-face {
+  font-family: 'joystix';
+  src: url('../fonts/joystix monospace.otf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta del archivo de fuente descargado */
+}
+
+.joystix {
+  font-family: 'joystix', sans-serif;
 }
